@@ -34,12 +34,21 @@ footer{
 .slider{
     background-image: url(./imgs/zz.png);
 }
+.slider div button:hover{
+    background-color: #d8d091;
+    border: 10px solid #8b8662;
+    color: seagreen;
+    cursor: pointer;
+}
 nav{
     background-color: seagreen;
 }
 .navItem{
     padding: 20px 20px;
     display: flex;;
+}
+.navAbajo h3:hover{
+    color: darkgreen;
 }
 .navArriba{
     display: flex;
@@ -123,6 +132,17 @@ nav{
     font-weight: 300;
     text-align: center;
     z-index: 1;
+}
+.anadir{
+    position: absolute;
+    background-color: darkgreen;
+    top: 52%;
+    left: 35%;
+    z-index: 1;
+    filter: sepia(30%);
+}
+.anadir:hover{
+    filter: sepia(0);
 }
 .sliderBG{
     width: 100vw;
