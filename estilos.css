@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d8d091;
+    overflow-x: hidden;
+    font-family: 'Fascinate Inline';
+}
+footer{
+    background-color: seagreen;
+    font-size: large;
+    text-align: center;
+    font-family: 'Fascinate Inline';
+    color: #d8d091;  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+.fb{
+    height: 30px;
+    width: 30px;
+}
+.yt{
+    height: 30px;
+    width: 30px;
+}
+
+.slider{
+    background-image: url(./imgs/zz.png);
+}
+nav{
+    background-color: seagreen;
+}
+.navItem{
+    padding: 20px 20px;
+    display: flex;;
+}
+.navArriba{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navArriba h1{
+    font-family: 'Tapestry', cursive;
+    font-size: 35px;
+    color: #d8d091;;
+}
+.search{
+    background-color: #d8d091;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: seagreen;
+}
+
+.navAbajo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-right: 20px;
+    cursor: pointer;
+    color: #d8d091;
+    font-weight: 400;
+    font-size: 50;
+    z-index: 1;
+}
+.sliderWrapper{
+    display: flex;
+    width: 200vw;
+    transition: 1.5s ease-in-out;
+    overflow: hidden;
+}
+.sliderItem{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.sliderImg{
+    overflow: hidden;
+    width: 70vw;
+    height: 41.5vw;
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: seagreen;
+    background-color: #d8d091;
+    border: 10px solid #8b8662;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: seagreen;
+    background-color: #d8d091;
+    border: 10px solid #8b8662;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1;
+}
+.sliderBG{
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    position: absolute;
+}
+.comprarBoton{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    font-size: 90px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1;
+    color: #d8d091;
+    background-color: seagreen;
+    border: 10px solid darkgreen;
+    border-radius: 20px;
+}
+.sliderItem:nth-child(1) .sliderBG{
+    background-color: darkblue;
+}
+.sliderItem:nth-child(2) .sliderBG{
+    background-color: darkred;
+}
