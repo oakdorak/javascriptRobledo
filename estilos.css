@@ -35,9 +35,7 @@ footer{
     background-image: url(./imgs/zz.png);
 }
 .slider div button:hover{
-    background-color: #d8d091;
-    border: 10px solid #8b8662;
-    color: seagreen;
+    filter: sepia(20%);
     cursor: pointer;
 }
 nav{
@@ -135,11 +133,11 @@ nav{
 }
 .anadir{
     position: absolute;
-    background-color: darkgreen;
-    top: 52%;
-    left: 35%;
+    background-color: seagreen;
+    top: 55%;
+    left: 37%;
     z-index: 1;
-    filter: sepia(30%);
+    filter: sepia(50%);
 }
 .anadir:hover{
     filter: sepia(0);
@@ -162,6 +160,10 @@ nav{
     background-color: seagreen;
     border: 10px solid darkgreen;
     border-radius: 20px;
+    filter: sepia(20%);
+}
+.comprarBoton:hover{
+    filter: sepia(0);
 }
 .sliderItem:nth-child(1) .sliderBG{
     background-color: darkblue;
