@@ -15,7 +15,6 @@ footer{
     text-align: center;
     font-family: 'Fascinate Inline';
     color: #d8d091;  
-    position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
@@ -56,7 +55,7 @@ nav{
 }
 .navArriba h1{
     font-family: 'Tapestry', cursive;
-    font-size: 35px;
+    font-size: 7vw;
     color: #d8d091;;
 }
 .search{
@@ -83,7 +82,7 @@ nav{
     cursor: pointer;
     color: #d8d091;
     font-weight: 400;
-    font-size: 50;
+    font-size: 4vw;
     z-index: 1;
 }
 .sliderWrapper{
@@ -121,7 +120,7 @@ nav{
 }
 .sliderPrice{
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 10%;
     color: seagreen;
     background-color: #d8d091;
@@ -134,13 +133,18 @@ nav{
 .anadir{
     position: absolute;
     background-color: seagreen;
-    top: 55%;
-    left: 37%;
-    z-index: 1;
+    left: 20%;
+    top: 60%;
+    height: 5vw;
+    width: 5vw;
     filter: sepia(50%);
+    z-index: 1;
 }
 .anadir:hover{
     filter: sepia(0);
+}
+.anadir:active{
+    background-color: darkgreen;
 }
 .sliderBG{
     width: 100vw;
@@ -148,11 +152,12 @@ nav{
     border-radius: 50%;
     position: absolute;
 }
+
 .comprarBoton{
     position: absolute;
-    top: 50%;
-    right: 20%;
-    font-size: 90px;
+    top: 60%;
+    right: 30%;
+    font-size: 4vw;
     font-weight: 300;
     text-align: center;
     z-index: 1;
@@ -160,14 +165,32 @@ nav{
     background-color: seagreen;
     border: 10px solid darkgreen;
     border-radius: 20px;
-    filter: sepia(20%);
 }
 .comprarBoton:hover{
-    filter: sepia(0);
+    filter: sepia(20%);
+}
+.comprarBoton:active{
+    background-color: #d8d091;
+    border-color: hsl(53, 17%, 46%);
+    color: seagreen;
 }
 .sliderItem:nth-child(1) .sliderBG{
     background-color: darkblue;
 }
 .sliderItem:nth-child(2) .sliderBG{
     background-color: darkred;
+}
+.gomitas{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+gomitas btn{
+
+}
+.gomitas p{
+    font-family: 'Tapestry';
+}
+.slider h1{
+    font-size: 5vw;
 }
