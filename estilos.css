@@ -10,6 +10,17 @@ body{
     overflow-x: hidden;
     font-family: 'Fascinate Inline';
 }
+form{
+    max-width: fit-content;
+    min-height: fit-content;
+}
+.btn{
+    color:#d8d091;
+}
+.btn:hover{
+    color: #8b8662;
+}
+
 footer{
     background-color: seagreen;
     font-size: large;
@@ -61,6 +72,8 @@ nav{
 }
 .search{
     background-color: #d8d091;
+    position: relative;
+    flex-direction: column;
     padding: 10px 20px;
     border-radius: 10px;
 }

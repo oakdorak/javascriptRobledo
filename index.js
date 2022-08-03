@@ -1,14 +1,18 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
-const anadir = document.querySelectorAll(".anadir");
+const carrito = document.querySelectorAll( ".anadir, .btn");
+
+for (i = 0; i < carrito.length; i++) {
+    carrito[i].addEventListener("click", () => {
+        console.log("Añadido al carrito");
+    });
+}
 
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
         wrapper.style.transform = `translateX(${-100 * index}vw)`;
     });
-});
-
-
+})
 
 const gomaMora = {
     sabor : "mora",
