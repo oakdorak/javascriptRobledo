@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded" , () => {
     fetchData()
+    if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
 })
 
 const fetchData = async () => {
@@ -80,6 +84,7 @@ const pintarCarrito = () => {
     items.appendChild(fragment)
 
     pintarFooter()
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     accionBotones()
 }
 
