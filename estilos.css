@@ -44,6 +44,8 @@ footer{
 
 .slider{
     background-image: url(./imgs/zz.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed
 }
 .slider div button:hover{
     filter: sepia(20%);
@@ -196,10 +198,11 @@ nav{
 }
 .gomitas{
     display: flex;
-    text-align: center;
     justify-content: space-around;
+    text-align: center;
 }
 .gomitas p{
+    text-align: center;
     font-family: 'Tapestry';
 }
 .slider h1{

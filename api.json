@@ -1,0 +1,14 @@
+[
+    {
+      "precio": 150,
+      "id": 1,
+      "title": "Mora Azul 10mg",
+      "thumbnailUrl": "https://www.zeromarket.mx/wp-content/uploads/2020/05/AY59.1.jpg"
+    },
+    {
+      "precio": 200,
+      "id": 2,
+      "title": "Fresa 15mg",
+      "thumbnailUrl": "https://libbys.es/wordpress/wp-content/uploads/2018/05/fresas.jpg"
+    }
+  ]

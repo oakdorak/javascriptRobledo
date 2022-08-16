@@ -28,45 +28,94 @@
             <h3 class="menuItem">|Gomitas de Fresa|</h3>
         </div>
     </nav>
+
+<container>
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
                 <img src="./imgs/IMG-9650.JPG" alt="" class="sliderImg">
                 <div class="sliderBG"></div>
                 <h1 class="sliderTitle">Gomas de Mora</h1>
-                <h1 class="sliderPrice">SOLO 100 PESOS</h1>
-                <button class="comprarBoton">¡Compre ahora!</button>
+                <h1 class="sliderPrice">4 por 150 PESOS</h1>
                 <img src="./imgs/7faf67c63084cf8345243e912885f1a5.png"class="anadir" width="50" height="50">
             </div>
             <div class="sliderItem">
                 <img src="./imgs/0a86cccd-d416-47d9-9e1b-7e721bfd1d8a.JPG" alt="" class="sliderImg">
                 <div class="sliderBG"></div>
                 <h1 class="sliderTitle">Gomas de Fresa</h1>
-                <h1 class="sliderPrice">SOLO 150 PESOS</h1>
-                <button class="comprarBoton">¡Compre ahora!</button>
+                <h1 class="sliderPrice">4 SOLO 200 PESOS</h1>
                 <img src="./imgs/7faf67c63084cf8345243e912885f1a5.png"class="anadir" width="50" height="50">
             </div>
         </div>
     </div>
-    <div class="gomitas">
-        <div class="card bg-success" style="width:400px">
-          <img class="card-img-top" src="./imgs/IMG-9650.JPG" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Gomitas de Mora</h4>
-            <p class="card-text">¡Solo 100 pesos!</p>
-            <a href="#" class="btn btn-success">Añadir a carrito</a>
-          </div>
+</container>
+    <div class="row" id="contenedor-productos">
+    </div>
+
+    <template id="template-productos">
+        <div class="gomitas col-12 col-md-4 mb-3">
+                <div class="card bg-success">
+                    <img class="card-img-top" src="" alt="Card image" style="width: 400px; height: 300px; text-align: center;>
+                    <div class="card-body">
+                        <h4 class="card-title">a</h4>
+                        <p class="card-text"></p>
+                        <button class="btn btn-success"><span>Añadir al carrito</span></button>
+                    </div>
+                </div>
         </div>
-        <div class="card bg-success" style="width:400px">
-            <img class="card-img-top" src="./imgs/0a86cccd-d416-47d9-9e1b-7e721bfd1d8a.JPG"  alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Gomitas de Fresa</h4>
-              <p class="card-text">¡A 10 pesos el MG, 150 pesos!</p>
-              <a href="#" class="btn btn-success">Añadir a carrito</a>
-            </div>
+        </template>
+
+        <div class="container">
+            <h4>Carrito de compras</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer-carrito">
+                  <th scope="row" colspan="1">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
         </div>
 
-    </div>
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td>Mora</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-success btn-sm">
+                    +
+                </button>
+                <button class="btn btn-warning btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+    
+    
+
     <footer>
         <p>Todos los derechos reservados :)</p>
         <a href="https://www.youtube.com/channel/UCs7sIwtTWe08AVMdKjeT7yg"><img src="/imgs/youtube.png"  alt="" class="yt"></a>
