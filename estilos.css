@@ -5,9 +5,9 @@
     padding: 0;
     overflow-x: hidden;
 }
-.logo{
+#logo{
     max-width: 300px;
-    max-height: 300px;
+    height: 300px
 }
 body{
     background-color: #d8d091;
@@ -211,4 +211,16 @@ nav{
 }
 .slider h1{
     font-size: 5vw;
+}
+@media only screen and (min-width: 480px) and (max-width: 599px){
+    #logo{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
 }
