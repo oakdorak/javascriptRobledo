@@ -115,8 +115,24 @@ const pintarFooter = () => {
     footer.appendChild(fragment)
     const boton = document.querySelector('#vaciar-carrito')
     boton.addEventListener('click',() => {
-        carrito = {}
-        pintarCarrito()
+        swal({
+            title: "Estas seguro?",
+            text: "Una vez borrado, perderas tu carrito",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then((resultado) => {
+            if (resultado) {
+                carrito = {}
+                pintarCarrito()
+              swal("Tu carrito ha sido vaciado", {
+                icon: "success",
+              });
+            }else {
+              swal("Tu carrito esta intacto, sigue comprando!");
+            }
+          });
     })
 }
 
