@@ -5,6 +5,10 @@
     padding: 0;
     overflow-x: hidden;
 }
+.logo{
+    max-width: 300px;
+    max-height: 300px;
+}
 body{
     background-color: #d8d091;
     overflow-x: hidden;
@@ -55,7 +59,7 @@ nav{
     background-color: seagreen;
 }
 .navItem{
-    padding: 20px 20px;
+    padding: 10px 10px;
     display: flex;;
 }
 .navAbajo h3:hover{

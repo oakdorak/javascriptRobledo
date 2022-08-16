@@ -18,6 +18,14 @@ const fetchData = async () => {
     }
 }
 
+document.querySelector('#slider').addEventListener('wheel', preventScroll, {passive: false});
+
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+}
 const contenedorProductos = document.querySelector('#contenedor-productos')
 const pintarProductos = (data) =>{
     const template = document.querySelector('#template-productos').content
